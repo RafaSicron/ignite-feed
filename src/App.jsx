@@ -1,8 +1,10 @@
 import { Header } from './components/Header'
-import { Post } from './Post'
+import { Post } from './components/Post'
+import { Sidebar } from './components/SideBar'
+
 import styles from './App.module.css'
 import './global.css'
-import { Sidebar } from './components/SideBar'
+
 
 export function App() {
 
@@ -17,7 +19,7 @@ export function App() {
             author="Angelo"
             content="teste1"
            />
-           <Post
+           <Post 
             author="Rafael"
             content="teste222"
            />
