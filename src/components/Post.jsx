@@ -3,15 +3,16 @@ import { Comment } from './Comment'
 import styles from './Post.module.css'
 
 
-export function Post() {
+export function Post(props) {
+    console.log(props)
     return(
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <Avatar src="https://github.com/RafaSicron.png"/>
+                    <Avatar src={props.author.avatarUrl}/>
                     <div className={styles.authorInfo}>
-                        <strong>Angelo Rafael</strong>
-                        <span>Web Developer</span>
+                        <strong>{props.author.name}</strong>
+                        <span>{props.author.role}</span>
                     </div>
                 </div>
                 <time title='3 de dezembro às 15:16' datetime="2024-03-12 15:16:36">Publicado há 1h</time>
