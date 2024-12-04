@@ -33,17 +33,15 @@
     outline: 2px solid var(--green-500);
 }
 
-.authorInfo {
-    display: flex;
-    flex-direction: column;;
-}
 
 .authorInfo strong {
+    display: block;
     line-height: 1.6;
     color: var(--gray-100);
 }
 
 .authorInfo span {
+    display: block;
     font-size: 0.875rem;
     color: var(--gray-400);
     line-height: 1.6;
